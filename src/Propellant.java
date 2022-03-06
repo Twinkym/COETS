@@ -1,7 +1,7 @@
 public class Propellant {
 
-    private Integer maxPower;
-    private Integer currentPower;
+    protected Integer maxPower;
+    protected Integer currentPower;
     private boolean available = false;
 
     public Propellant(Integer maxPower, Integer currentPower) {
@@ -9,12 +9,11 @@ public class Propellant {
         this.currentPower = currentPower;
     }
 
-    public Integer getMaxPower() {
-        return maxPower;
+    public Propellant() {
     }
 
-    public void setMaxPower(Integer maxPower) {
-        this.maxPower = maxPower;
+    public Integer getMaxPower() {
+        return maxPower;
     }
 
     public Integer getCurrentPower() {
@@ -23,13 +22,5 @@ public class Propellant {
 
     public void setCurrentPower(Integer currentPower) {
         this.currentPower = currentPower;
-    }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
     }
 }

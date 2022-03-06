@@ -1,23 +1,18 @@
 import java.util.ArrayList;
 import java.util.List;
+public class Rocket {
 
-public class Coet {
+    protected String code;
+    protected Integer numberOfPropellants;
+    protected List<Propellant> propellantList = new ArrayList<Propellant>();
 
-    private String code;
-    private Integer numberOfPropellants;
-    private List<Propellant> propellantList = new ArrayList<Propellant>();
-
-    public Coet(String code, Integer numberOfPropellants) {
+    public Rocket(String code, Integer numberOfPropellants) {
         this.code = code;
         this.numberOfPropellants = numberOfPropellants;
     }
 
     public String getCode() {
         return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public Integer getNumberOfPropellants() {
